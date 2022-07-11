@@ -1,0 +1,46 @@
+#box{
+    height:100px;
+    width: 100px;
+    background: red;
+    color: white;
+    animation-name: box;
+    margin-bottom: 20px;
+    /* animation-direction: reverse; */
+    animation-timing-function:ease-in-out;
+    position: relative;
+    
+}
+
+#transit{
+    position: relative;
+    height:100px;
+    width: 100px;
+    background:blue;
+    color: white;
+}
+#transit:hover{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    /* top: -20px; */
+    left: 30px;
+}
+
+#box{
+    animation-duration:8s;
+    animation-iteration-count:3;
+  
+}
+
+
+
+@keyframes box {
+    from {background-color:red;border-radius: 10px; left: 0;top: 0;}
+    10% {background-color: black;border-radius: 25px;left: 20px;top: 20px;}
+    20% {background-color: rgb(151, 132, 132);left: 40px;top: 40px;border-radius: 35px;}
+    30% {background-color: green;left: 60px;top: 60px;border-radius: 55px;}
+    50% {background-color: blue;left: 80px;top: 80px;border-radius: 75px;}
+    70% {background-color: yellow;left: 100px;top: 100px;border-radius: 90px;}
+    100% {background-color:orange;left: 120px;top: 120px;border-radius: 105px;}
+}
+
